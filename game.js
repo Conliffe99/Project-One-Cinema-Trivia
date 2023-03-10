@@ -66,7 +66,7 @@ let questions = [
         answer: 2
     },
     {
-        question: "What is the best tv show thats ever aired?",
+        question: "What is the best tv show that has ever aired?",
         answer1: "Atlanta",
         answer2: "Heroes",
         answer3: "Greys Anatomy",
@@ -140,5 +140,17 @@ selections.forEach(selection =>{
         getNewQuestion();
     });
 });
-
 startGame();
+
+
+const secondsValue = document.querySelector('#seconds');
+const triviaTime = new Date(0,0,0,0,0,15,0,).getTime();
+//this is the time I want the timer to count down from starting with year being 0 month is 0 date is 0 hour is 0 minute is 0 seconds is 15 millisecond is 0
+function countdown() {
+    const triviaTime = new Date().getTime();
+    let difference = triviaTime - dateTimeNow;
+
+    const secondsValue = math.floor(difference / (1000) % 60);
+    console.log(secondsValue)
+}
+countdown();

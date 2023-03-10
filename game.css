@@ -19,7 +19,7 @@
 .answer-container {
     display:flex;
     margin-bottom: 0.5 rem;
-    font-size: 1.8 rem;
+    font-size: 1.5rem;
     width: 85%;
     border: 2rem solid rgba(195, 133, 26, 0.25);
     background-color: white;
@@ -43,4 +43,26 @@
 .answer.text {
     margin: 1.5rem;
     width: 100%;
+}
+
+.timer-container{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    bottom: 400px;
+    left: 80px;
+    font-size: 200px;
+
+}
+
+.timer-two{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    bottom: 580px;
+    left: 1140px;
+    font-size: 200px;
+
 }
