@@ -8,31 +8,51 @@
     <title>Cinema Trivia</title>
 </head>
 <body>
-    <div class="answer-container">
-        <div id="game">
-            <h2 id="question">What is Quinten Tarintino's best film?</h2>
-            <div class= "answer-container">
-                <p class="answer-prefix">A</p>
-                <p class="answer-text" data-number="1">Inglourious Basterds</p>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
             </div>
-            <div class= "answer-container">
-                <p class="answer-prefix">B</p>
-                <p class="answer-text" data-number="2">Pulp Fiction</p>
+            <h1 id="question">What is Quinten Tarintino's best film?</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Inglourious Basterds</p>
             </div>
-            <div class= "answer-container">
-                <p class="answer-prefix">C</p>
-                <p class="answer-text" data-number="3">Django Unchained</p>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Pulp Fiction</p>
             </div>
-            <div class= "answer-container">
-                <p class="answer-prefix">D</p>
-                <p class="answer-text" data-number="4">The H8ful Eight</p>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Django Unchained</p>
             </div>
-            <script src="game.js" defer ></script>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">The H8ful Eight</p>
+            </div>
+        </div>
     </div>
-        </div> -->
+    <script src="game.js" defer></script>
+</body>
+</html>
         <div id="timer-container">
             <div id="timer">15</div>
           </div>
 
-</html>
+</html> -->
 
