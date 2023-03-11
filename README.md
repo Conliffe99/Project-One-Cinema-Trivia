@@ -14,3 +14,10 @@ Stretch Goal
 
 As a stretch goal I would like tense music to be played in the background.
 As a stretch goal I would like a correc/incorrect color (red/green) when I click on an answer
+
+
+Screenshots of game
+![Screen Shot 2023-03-11 at 8 00 16 AM](https://user-images.githubusercontent.com/122856513/224489054-bafd2ecd-1695-48d5-96cb-002d8d222757.png)
+![Screen Shot 2023-03-11 at 8 00 28 AM](https://user-images.githubusercontent.com/122856513/224489062-f8230ffc-c0de-4cd8-a245-3684f92cb16c.png)
+![Screen Shot 2023-03-11 at 8 00 43 AM](https://user-images.githubusercontent.com/122856513/224489066-79f8db2e-b0d2-45c6-b369-47361fedfc2c.png)
+
