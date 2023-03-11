@@ -30,11 +30,11 @@ body {
 }
 
 .correct {
-    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111));
 }
 
 .incorrect {
-    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1));
 }
 
 /* Heads up Display */
@@ -55,7 +55,7 @@ body {
 #progressBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid rgb(11,223,36);
+    border: 0.2rem solid green(11,223,36);
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
@@ -67,15 +67,12 @@ body {
     width: 0%;
 }
 
-
-
  .container {
     display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
-    border: 2 rem solid rgb(110, 90, 250);
     justify-content: center;
-    background-color: black;
+    background-color: blue;
 }
 
 #game {
@@ -105,4 +102,4 @@ body {
     background-color: tan;
     border-radius: 5px;
     padding: 10px;
-  } */
+  }

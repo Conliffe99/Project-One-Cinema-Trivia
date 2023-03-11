@@ -123,7 +123,7 @@ getNewQuestion = () => {
     choices.forEach(choice => {
         const number = choice.dataset['number']
         // //reference to current question by getting out of available question array
-        choice.innerText = currentQuestion['choice' + number]
+        choice.innerText = currentQuestion['answer' + number]
     })
 
     availableQuestions.splice(questionsIndex, 1)
