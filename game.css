@@ -12,17 +12,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    border: 2px solid blue;
+    width: 100%;
 }
 
 .answer-container {
     display:flex;
     margin-bottom: 0.5 rem;
     font-size: 1.5rem;
-    width: 85%;
+    width: 100%;
     border: 2rem solid rgba(195, 133, 26, 0.25);
-    background-color: white;
+    background-color: tan;
     align-items: center;
 }
 
@@ -45,24 +44,18 @@
     width: 100%;
 }
 
-.timer-container{
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    position: relative;
-    bottom: 400px;
-    left: 80px;
-    font-size: 200px;
-
-}
-
-.timer-two{
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    position: relative;
-    bottom: 580px;
-    left: 1140px;
-    font-size: 200px;
-
-}
+#timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  #timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    background-color: tan;
+    border-radius: 5px;
+    padding: 10px;
+  }

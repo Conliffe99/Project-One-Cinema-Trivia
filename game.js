@@ -143,14 +143,39 @@ selections.forEach(selection =>{
 startGame();
 
 
-const secondsValue = document.querySelector('#seconds');
-const triviaTime = new Date(0,0,0,0,0,15,0,).getTime();
-//this is the time I want the timer to count down from starting with year being 0 month is 0 date is 0 hour is 0 minute is 0 seconds is 15 millisecond is 0
-function countdown() {
-    const triviaTime = new Date().getTime();
-    let difference = triviaTime - dateTimeNow;
+let count = 15;
+let timer = null;
 
-    const secondsValue = math.floor(difference / (1000) % 60);
-    console.log(secondsValue)
+function startTimer() {
+  clearInterval(timer); // clear any previous timers
+  count = 15;
+  timer = setInterval(() => {
+    count--;
+    if (count < 1) {
+      clearInterval(timer);
+      count = 15;
+    }
+    updateTimerDisplay();
+  }, 1000);
+  //1000 milliseconds = 1 second
 }
-countdown();
+
+function resetTimer() {
+  clearInterval(timer);
+  count = 15;
+  updateTimerDisplay();
+}
+
+function updateTimerDisplay() {
+  const timerDisplay = document.getElementById('timer');
+  timerDisplay.textContent = count;
+  
+  if (count <= 5) {
+    timerDisplay.style.backgroundColor = '#F90';
+  } else {
+    timerDisplay.style.backgroundColor = '#F00';
+  }
+}
+
+// call startTimer() to begin the timer
+startTimer();
